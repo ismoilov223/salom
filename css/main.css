@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto";
+    font-weight: 400;
+}
+html,body{
+    height: 100%;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 2.1s;
+}
+.rounded-box{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 8px solid rgb(8, 8, 8);
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: loader 1.9s infinite;
+    position: absolute;
+}
+.rounded-box-two{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 8px solid rgb(20, 22, 21);
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: loader-two 1.9s infinite;
+    position: absolute;
+    background: transparent;
+}
+.btn-press-start{
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 22px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+ .btn-press-start:hover{
+    background-color: rgb(52, 117, 117);
+} 
+.text{
+    /* transition: all 7s; */
+}
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader-two{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
